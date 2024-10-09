@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Project;
+use App\Models\Proposal;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -18,5 +19,7 @@ class DatabaseSeeder extends Seeder
         User::factory()->count(5)->create();
 
         Project::factory()->count(5)->create();
+
+        Proposal::factory()->count(5)->create();
     }
 }
